@@ -1,0 +1,60 @@
+/* style6.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #3a7bd5, #00d2ff);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  background-color: #ffffff;
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.code-inputs {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.code-inputs input {
+  width: 50px;
+  height: 60px;
+  font-size: 24px;
+  text-align: center;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  transition: 0.3s ease;
+  background-color: #f9f9f9;
+}
+
+.code-inputs input:focus {
+  outline: none;
+  border-color: #3a7bd5;
+  box-shadow: 0 0 8px rgba(58, 123, 213, 0.4);
+  background-color: #ffffff;
+}
+
+.verify-btn {
+  background-color: #3a7bd5;
+  color: white;
+  padding: 12px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.verify-btn:hover {
+  background-color: #2d5fa5;
+}
