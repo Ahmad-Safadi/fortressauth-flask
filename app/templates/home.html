@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h1>Welcome</h1>
+  
+  <form method="POST">
+    {{ form.hidden_tag() }}
+    {{ form.sign_in(class="btn") }}
+    {{ form.sign_up(class="btn") }}
+  </form>
+  
+</body>
+</html>

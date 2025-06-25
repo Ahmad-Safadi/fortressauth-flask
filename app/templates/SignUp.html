@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style2.css') }}">
+</head>
+<body>
+  <h1>Sign Up</h1>
+
+  <form method="POST">
+    {{ form.hidden_tag() }}
+    {{ form.name(placeholder="Enter Your Name", class="input") }}
+    <h6>{{ name_error }}</h6>
+    {{ form.password(placeholder="Enter Your Password", class="input") }}
+    <h6>{{ password_error }}</h6>
+    {{ form.email(placeholder="Enter Your Email", class="input") }}
+    <h6>{{ email_error }}</h6>
+    {{ form.submit(class="btn") }}
+    <a href="/SignIn"> I have an account</a>
+  </form>
+
+</body>
+</html>
